@@ -27,3 +27,6 @@
 --dizel bit,
 --testandtune bit
 --);
+--create table komentari(
+--napomena varchar(500)
+--);
