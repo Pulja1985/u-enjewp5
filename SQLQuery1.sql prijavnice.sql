@@ -1,0 +1,29 @@
+--create database prijavnice;
+--use prijavnice;
+--create table vozaci(
+--sifra int,
+--ime varchar(50),
+--prezime varchar(50),
+--oib char(11),
+--clankluba bit,
+--email varchar(100)
+--);
+--create table vozila(
+--marka varchar(50),
+--model varchar(50),
+--snaga int,
+--gorivobenzin bit,
+--gorivodizel bit,
+--elektricni bit,
+--turbo bit,
+--nitro bit,
+--pogon varchar(50)
+--);
+--create table utrke(
+--subota bit,
+--nedjelja bit,
+--streetrace bit,
+--proklasa bit,
+--dizel bit,
+--testandtune bit
+--);
