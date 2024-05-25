@@ -68,8 +68,11 @@
 --create table komentari(
 --napomena varchar(500)
 --);
-insert into vozaci values
+--insert into vozaci values
 --(1001,'hrvoje', 'puljicilic' ,28104444467, '0', 'hpuljic85@gmail.com')
 --(1002,'dominik', 'puljicilic' ,12345678901, '1', 'dominik92@gmai.com')
 --(1003,'slaven', 'krainovic', 12341234123,'1','slaven84@gmail.com')
-(1004, 'mato', 'pastulovic', 12345123451, '1', 'mato86@gmail.com')
+--(1004, 'mato', 'pastulovic', 12345123451, '1', 'mato86@gmail.com')
+insert into vozila values
+--('honda', 'civic', 500, 1, 0, 0, 1, 0, 'prednji')
+('honda', 'civic', 185, 1, 0, 0, 0, 0, 'prednji')
