@@ -47,6 +47,7 @@
 --email varchar(100)
 --);
 --create table vozila(
+--sifra int,
 --marka varchar(50),
 --model varchar(50),
 --snaga int,
@@ -73,6 +74,8 @@
 --(1002,'dominik', 'puljicilic' ,12345678901, '1', 'dominik92@gmai.com')
 --(1003,'slaven', 'krainovic', 12341234123,'1','slaven84@gmail.com')
 --(1004, 'mato', 'pastulovic', 12345123451, '1', 'mato86@gmail.com')
-insert into vozila values
---('honda', 'civic', 500, 1, 0, 0, 1, 0, 'prednji')
-('honda', 'civic', 185, 1, 0, 0, 0, 0, 'prednji')
+--insert into vozila values
+--(1001, 'honda', 'civic', 500, 1, 0, 0, 1, 0, 'prednji')
+--(1002, 'honda', 'civic', 185, 1, 0, 0, 0, 0, 'prednji')
+--(1003, 'honda', 'civic', 320, 1, 0, 0, 1, 0, 'prednji')
+--(1004, 'honda', 'civic', 300, 1, 0, 0, 1, 0, 'prednji')
