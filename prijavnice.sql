@@ -89,7 +89,7 @@
 --dizelklasa bit,
 --testandtune bit
 --);
-insert into utrke values
+--insert into utrke values
 --(1001, 1, 1, 1, 0, 0, 1)
 --(1002, 1, 1, 1, 0, 0, 1)
 --(1003, 1, 1, 1, 0, 0, 1)
