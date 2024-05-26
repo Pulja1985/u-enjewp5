@@ -79,3 +79,18 @@
 --(1002, 'honda', 'civic', 185, 1, 0, 0, 0, 0, 'prednji')
 --(1003, 'honda', 'civic', 320, 1, 0, 0, 1, 0, 'prednji')
 --(1004, 'honda', 'civic', 300, 1, 0, 0, 1, 0, 'prednji')
+--drop table utrke;
+--create table utrke(
+--sifra int,
+--subota bit,
+--nedjelja bit,
+--streetrace bit,
+--proklasa bit,
+--dizelklasa bit,
+--testandtune bit
+--);
+insert into utrke values
+--(1001, 1, 1, 1, 0, 0, 1)
+--(1002, 1, 1, 1, 0, 0, 1)
+--(1003, 1, 1, 1, 0, 0, 1)
+--(1004, 1, 1, 1, 0, 0, 1)
