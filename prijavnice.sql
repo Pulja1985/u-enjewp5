@@ -1,3 +1,24 @@
+use master;
+go
+drop database if exists prijavnice;
+go
+create database prijavnice;
+go
+use prijavnice;
+create table vozaci(
+sifra int not null primary key identity(1000,1),
+ime varchar(50) not null,
+prezime varchar(50) not null,
+oib char(11),
+vozilo varchar(50) not null
+);
+create table vozila(
+marka varchar(50) not null,
+model varchar(50) not null,
+snaga varchar(50) not null,
+pogon int not null
+);
+
 --create database prijavnice;
 --use prijavnice;
 --create table vozaci(
