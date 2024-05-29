@@ -25,6 +25,7 @@ mjesto varchar(50) not null,
 naziv_utrke varchar(50) not null,
 vozac_sifra int 
 );
+alter table vozaci add foreign key(sifra)references utrke(utrka_sifra);
 
 
 --insert into vozaci values
