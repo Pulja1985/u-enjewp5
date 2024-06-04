@@ -10,22 +10,24 @@ sifra int not null primary key identity(1,1),
 ime varchar(50) not null,
 prezime varchar(50) not null,
 oib char(11),
-vozilo varchar(50) not null
+vozilo_sifra int
 );
 create table vozila(
 marka varchar(50) not null,
 model varchar(50) not null,
 snaga varchar(50) not null,
-pogon varchar(50) not null
+pogon varchar(50) not null,
+sifra int not null primary key identity(1,1)
 );
 create table utrke(
-utrka_sifra int not null primary key identity(1,1),
+sifra int not null primary key identity(1,1),
 datum datetime,
 mjesto varchar(50) not null,
-naziv_utrke varchar(50) not null,
+naziv varchar(50) not null,
 vozac_sifra int 
 );
-alter table vozaci add foreign key(sifra)references utrke(utrka_sifra);
+alter table utrke add foreign key(vozac_sifra)references vozaci(sifra);
+alter table vozaci add foreign key(vozilo_sifra)references vozila (sifra);
 
 
 --insert into vozaci values
