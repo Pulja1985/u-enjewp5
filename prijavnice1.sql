@@ -21,7 +21,7 @@ vozaci_sifra int not null
 );
 create table utrke(
 sifra int not null primary key identity(1,1),
-datum datetime,
+datum datetime not null,
 mjesto varchar(50) not null,
 naziv varchar(50) not null 
 );
@@ -57,32 +57,7 @@ insert into utrke(datum,mjesto,naziv)values
 ('2024-06-01 09-00','osijek','osrs31'),
 ('2024-06-01 09-00','osijek','osrs31')
 
+select * from vozila_utrke;
 
-
---insert into vozaci values
---(1001,'hrvoje', 'puljicilic' ,28104444467, 'ne', 'hpuljic85@gmail.com')
-
---insert into vozaci values
---(1001,'hrvoje', 'puljicilic' ,28104444467, '0', 'hpuljic85@gmail.com'),
---(1002,'dominik', 'puljicilic' ,12345678901, '1', 'dominik92@gmai.com'),
---(1003,'slaven', 'krainovic', 12341234123,'1','slaven84@gmail.com'),
---(1004, 'mato', 'pastulovic', 12345123451, '1', 'mato86@gmail.com')
-
---insert into vozila values
---(1001, 'honda', 'civic', 500, 1, 0, 0, 1, 0, 'prednji'),
---(1002, 'honda', 'civic', 185, 1, 0, 0, 0, 0, 'prednji'),
---(1003, 'honda', 'civic', 320, 1, 0, 0, 1, 0, 'prednji'),hrvoje
---(1004, 'honda', 'civic', 300, 1, 0, 0, 1, 0, 'prednji')
-
---insert into utrke values
---(1001, 1, 1, 1, 0, 0, 1),
---(1002, 1, 1, 1, 0, 0, 1),
---(1003, 1, 1, 1, 0, 0, 1),
---(1004, 1, 1, 1, 0, 0, 1)
---create table komentari(
-
---insert into komentari values
---(1001, 'molim da se stave zajedno 1001 1002'),
---(1002, 'molim da se stave zajedno brojevi 1001 1002'),
---(1003, 'nemojte me stavit uz brojeve 1001 1002'),
---(1004, 'bas me briga')
+insert into utrke(vozilo_sifra,utrke_sifra)values
+(1,1),(2,1),(3,1),(4.1)
