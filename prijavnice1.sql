@@ -60,4 +60,4 @@ insert into utrke(datum,mjesto,naziv)values
 select * from vozila_utrke;
 
 insert into vozila_utrke(vozilo_sifra,utrke_sifra)values
-(1,1),(2,1),(3,1),(4.1);s
+(1,1),(2,1),(3,1),(4.1);
