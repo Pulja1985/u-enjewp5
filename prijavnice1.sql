@@ -54,12 +54,11 @@ insert into vozila(marka,model,snaga,pogon,vozaci_sifra)values
 insert into utrke(datum,mjesto,naziv)values
 ('2024-06-01 09:00','Budapest','Honda day'),
 ('2024-05-15 09:00','Osijek','Osrs31'),
-('2024-06-01 10:00','Osijek','Osrs31'),
-('2024-06-01 09:00','Osijek','Osrs31');
+('2024-07-05 10:00','Santa pod','Honda day'),
+('2024-06-01 09:00','Osijek','Osrs32');
 
 --select * from vozila_utrke;
 
 insert into vozila_utrke(vozilo_sifra,utrke_sifra)values
 (1,1),(2,1),(3,1),(4,1);
 
-select * from vozaci,vozila,utrke,vozila_utrke;
