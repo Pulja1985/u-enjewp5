@@ -2,7 +2,7 @@
 go
 drop database if exists prijavnice;
 go
-create database prijavnice;
+create database prijavnice collate Croatian_CI_AS ;
 go
 use prijavnice;
 create table vozaci(
@@ -33,7 +33,7 @@ alter table vozila_utrke add foreign key(vozilo_sifra)references vozila(sifra);
 alter table vozila add foreign key(vozaci_sifra)references vozaci(sifra);
 alter table vozila_utrke add foreign key (utrke_sifra)references utrke(sifra);
 
---select * from vozaci;
+
 
 insert into vozaci(ime,prezime,oib)values
 ('Hrvoje','Puljić-Ilić','24104444467'),
@@ -41,7 +41,8 @@ insert into vozaci(ime,prezime,oib)values
 ('Matija','Puljić-Ilić','23456789012'),
 ('Slaven','Krainović','34567890123');
 
---select * from vozila;
+select * from vozaci;
+
 
 insert into vozila(marka,model,snaga,pogon,vozaci_sifra)values
 ('Honda','Civic_ek4',160,'prednji',1),
@@ -49,7 +50,8 @@ insert into vozila(marka,model,snaga,pogon,vozaci_sifra)values
 ('Honda','Accord_cl8',155,'prednji',3),
 ('Honda','Civic_eg4',150,'prednji',4);
 
---select * from utrke;
+select * from vozila;
+
 
 insert into utrke(datum,mjesto,naziv)values
 ('2024-06-01 09:00','Budapest','Honda day'),
@@ -57,8 +59,10 @@ insert into utrke(datum,mjesto,naziv)values
 ('2024-07-05 10:00','Santa pod','Honda day'),
 ('2024-06-01 09:00','Osijek','Osrs32');
 
---select * from vozila_utrke;
+select * from utrke;
+
 
 insert into vozila_utrke(vozilo_sifra,utrke_sifra)values
 (1,1),(2,1),(3,1),(4,1);
 
+select * from vozila_utrke;
