@@ -1,4 +1,4 @@
-use master;
+﻿use master;
 go
 drop database if exists prijavnice;
 go
@@ -36,10 +36,10 @@ alter table vozila_utrke add foreign key (utrke_sifra)references utrke(sifra);
 --select * from vozaci;
 
 insert into vozaci(ime,prezime,oib)values
-('Hrvoje','Pulji?-Ili?','24104444467'),
-('Dominik','Pulji?-Ili?','12345678901'),
-('Matija','Pulji?-Ilic','23456789012'),
-('Slaven','Krainovi?','34567890123');
+('Hrvoje','Puljić-Ilić','24104444467'),
+('Dominik','Puljić-Ilić','12345678901'),
+('Matija','Puljić-Ilić','23456789012'),
+('Slaven','Krainović','34567890123');
 
 --select * from vozila;
 
